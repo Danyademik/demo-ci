@@ -26,4 +26,5 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Run tests
+        working-directory: demo
         run: mvn test
